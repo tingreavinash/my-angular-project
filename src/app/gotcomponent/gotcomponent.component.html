@@ -1,0 +1,23 @@
+<p>gotcomponent works!</p>
+
+<ul class="list-group" style="margin-bottom: 1rem;">
+	<li class="list-group-item"> {{GOTCharacter[0]}} </li>
+	<li class="list-group-item"> {{GOTCharacter[1]}} </li>
+	<li class="list-group-item"> {{GOTCharacter[2]}} </li>
+	<li class="list-group-item"> {{GOTCharacter[3]}} </li>
+	
+</ul>
+<div>
+<img [src]="imageURLChild" alt="">	
+</div>
+
+<div class="btn-group">
+<button type="button" (click)="switchFirstandLastname()" class="btn btn-warning" >Start Switch</button>
+<button type="button" name="button" class="btn btn-danger" [disabled]="stopSwitchStatus" (click)="stopSwitchFirstandLastname()">Stop Switch</button>	
+</div>
+
+<div>
+	<input class="form-text" type="text" [(ngModel)]="twoWayData" [value]="twoWayData" placeholder="Enter something">
+	{{twoWayData}}<br>
+	{{twoWayData}}
+</div>
