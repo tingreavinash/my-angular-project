@@ -36,7 +36,7 @@ export class GOTComponentComponent implements OnInit {
   			console.log('else');
   		}
   		this.i++;
-  	}, 2000)
+  	}, 300)
   	this.stopSwitchStatus=false;		
 	}
 

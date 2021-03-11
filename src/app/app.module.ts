@@ -8,12 +8,16 @@ import { AppComponent } from './app.component';
 
 import { FirstComponent } from './first/first.component';
 import { GOTComponentComponent } from './gotcomponent/gotcomponent.component';
+import { DirectiveExampleComponent } from './directive-example/directive-example.component';
+import { F1ComponentComponent } from './f1-component/f1-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    GOTComponentComponent
+    GOTComponentComponent,
+    DirectiveExampleComponent,
+    F1ComponentComponent
   ],
   imports: [
     BrowserModule,

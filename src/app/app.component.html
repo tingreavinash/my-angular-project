@@ -1,2 +1,16 @@
 <h1>Hello {{ username }}</h1>
-<app-first></app-first>
+
+<div class="btn-group" *ngFor="let component_name of totalComponents" (click)="selectComponent(component_name)">
+	<button type="button" class="btn btn-sm btn-warning " style="margin: 2px;"> {{component_name}} </button>
+	
+</div>
+<hr>
+
+<div [ngSwitch]="selectedComponent">
+	<div *ngSwitchCase="'first-component'"><app-first></app-first></div>
+	<div *ngSwitchCase="'got-component'"><app-gotcomponent [imageURLChild]="logo_url"></app-gotcomponent></div>
+	<div *ngSwitchCase="'directive-example'"><app-directive-example></app-directive-example></div>
+	<div *ngSwitchDefault>No Components selected</div>
+</div>
+
+
